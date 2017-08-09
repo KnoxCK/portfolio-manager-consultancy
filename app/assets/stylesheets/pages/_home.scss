@@ -1,1 +1,126 @@
-// Specific CSS for your home-page
+.wrapper {
+	background-color: #f7f7f7;
+	padding: 0 50px;
+}
+.page-content {
+	background-color: white;
+	padding-bottom: 50px;
+}
+.intro-para {
+	font-size: 16px;
+    padding: 60px 90px 30px 90px;
+    letter-spacing: 0.3px;
+    line-height: 1.8;
+    text-align: justify;
+    /* width: 660px; */
+	h2 {
+		font-size: 43px;
+		padding-bottom: 20px;
+		color: #0F253D;
+		width: 650px;
+	}
+	strong {
+		font-size: 18px;
+	}
+	span {
+		color: #E1482E;
+		font-size: 14px;
+	}
+}
+.intro-paras {
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	padding: 0px 90px;
+	line-height: 1.7;
+	h4 {
+		font-size: 14px;
+		color: #E1482E;
+		letter-spacing: 0.5px;
+	}
+	p {
+		font-size: 14px;
+		text-align: justify;
+		margin-bottom: 6px;
+	}
+	span {
+		font-size: 12px;
+		text-decoration: underline;
+	}
+}
+.intro-para-first {
+	padding-right: 30px;
+}
+.intro-para-last {
+	padding-left: 30px;
+}
+.team-section {
+	h3 {
+		padding-top: 40px;
+		text-align: center;
+	}
+}
+.team-members {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	padding-left: 120px;
+}
+.team-member {
+	padding: 20px 20px;
+	width: auto;
+	line-height: 1.7;
+	img { 
+		width: 200px;
+	}
+	h4 {
+		font-size: 16px;
+		color: #E1482E;
+		letter-spacing: 0.5px;
+		margin-bottom: 0;
+	}
+	h5 {
+		font-size: 14px;
+		text-align: justify;
+		margin-top: 5px;
+		margin-bottom: 0;
+	}
+	p {
+		font-size: 14px;
+		text-align: justify;
+		margin-bottom: 6px;
+		margin-top: 14px;
+	}
+}
+.team-member-first {
+	width: 418px;
+}
+.team-member-last {
+	width: 383px;
+}
+.news-section {
+	h3 {
+		padding-top: 60px;
+		text-align: left;
+		padding-left: 93px;
+	}
+}
+@media only screen and (max-width: 1000px) {
+	.page-content {
+		flex-direction: column;
+	}
+	.intro-para {
+		padding-top: 16px;
+		padding-bottom: 30px;
+		margin-right: 40px;
+		width: auto;
+		h2 {
+			width: auto;
+		}
+	}
+	.contact-details {
+		margin: 10px 40px 40px 40px;
+	}
+}
+
+

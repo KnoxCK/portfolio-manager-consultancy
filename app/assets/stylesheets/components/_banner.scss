@@ -1,0 +1,36 @@
+.banner {
+  background-image: url('http://res.cloudinary.com/dqxvcdy6w/image/upload/v1502296305/PMCL_Banner_wvlu36.png');
+  color: white;
+  text-align: center;
+  height: 300px;
+  max-width: 100%;
+  background-size: cover !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-top: 70px;
+}
+.banner-content {  
+	h3 {
+		font-size: 20px;
+    letter-spacing: 2px;
+	}
+  span {
+    color: #E54A35;
+  }
+  img {
+    height: 23px;
+  }
+}
+@media only screen and (max-width: 452px) {
+  .banner {
+     margin: 34px 0 0 0;
+
+     height: 25vh;
+     h1 {
+      display: none;
+     }
+  }
+}
