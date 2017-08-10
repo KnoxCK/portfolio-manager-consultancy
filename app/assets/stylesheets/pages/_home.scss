@@ -22,7 +22,7 @@
 	strong {
 		font-size: 18px;
 	}
-	span {
+	a {
 		color: #E1482E;
 		font-size: 14px;
 	}
@@ -134,6 +134,9 @@
 		font-size: 12px;
 		text-decoration: underline;
 	}
+}
+hr {
+	margin: 0 0 7px 0;
 }
 @media only screen and (max-width: 1000px) {
 	.page-content {
