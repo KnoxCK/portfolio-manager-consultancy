@@ -3,6 +3,7 @@ class PagesController < ApplicationController
 
   def home
     @team_members = Team.all
+    @news = News.all
   end
 
    def whatwedo
