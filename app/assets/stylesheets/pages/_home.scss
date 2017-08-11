@@ -64,14 +64,13 @@
 	display: flex;
 	justify-content: center;
 	align-content: center;
-	padding-left: 120px;
 }
 .team-member {
-	padding: 20px 20px;
-	width: auto;
+	padding: 20px 30px;
+	width: 300px;
 	line-height: 1.7;
-	img { 
-		width: 200px;
+	img {
+		width: 300px;
 	}
 	h4 {
 		font-size: 14px;
@@ -96,12 +95,7 @@
 		margin-top: 14px;
 	}
 }
-.team-member-first {
-	width: 418px;
-}
-.team-member-last {
-	width: 383px;
-}
+
 .news-section {
 	padding-bottom: 30px;
 	h3 {

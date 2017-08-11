@@ -36,27 +36,40 @@
 			</div>
 		</div>
 	</div>
+
+
+
 	<div class="page-content" id="team">
 		<div class="team-section">
 			<h3>Our Team</h3>
 			<div class="team-members">
-				<div class="team-member team-member-first">
-					<%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1475845440/ME_hfrqwh.jpg", crop: :fit) %>
-					<h4>Edward Jewson</h4>
-					<h5><a href="tel:+44-777-063-8907">+44 (0) 7770 668907</a></h5>
-					<h5><%= link_to "edward@pmclconsulting.com", "mailto:info@pmclconsulting.com" %></h5>
-					<p>Edward Jewson has more than twenty years of experience in advising charities. Edward was the founder and CEO of Jewson Associates, a Charity specialist investment consultancy that was later acquired by Stanhope Capital. He then became Head of Stanhope Jewson.</p>
-				</div>
-				<div class="team-member team-member-last">
-					<%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1475845440/ME_hfrqwh.jpg", crop: :fit) %>
+
+        <% @team_members.each do |member| %>
+  				<div class="team-member">
+  					<%= image_tag(member.image, crop: :fit) %>
+  					<h4><%= member.name %></h4>
+  					<h5><a href="tel:<%= member.tel.gsub(" ", "-") %>"><%= member.tel %></a></h5>
+  					<h5><%= link_to member.email, "mailto:#{member.email}" %></h5>
+  					<p><%= member.bio %></p>
+  				</div>
+        <% end %>
+
+
+				<!-- <div class="team-member team-member-last">
+					<%# image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1475845440/ME_hfrqwh.jpg", crop: :fit) %>
 					<h4>Tatyana Mursalimov</h4>
 					<h5><a href="tel:+44-790-927-9273">+44 (0) 7909 279273</a></h5>
-					<h5><%= link_to "tatyana@pmclconsulting.com", "mailto:tatyana@pmclconsulting.com" %></h5>
+					<h5><%# link_to "tatyana@pmclconsulting.com", "mailto:tatyana@pmclconsulting.com" %></h5>
 					<p>Tatyana Mursalimov has professional background in global investment research, strategy planning  and consulting. For the past eight years, Tatyana has worked as an Executive Director at Goldman Sachs Global Investment Research division.</p>
 				</div>
+ -->
+
 			</div>
 		</div>
 	</div>
+
+
+
 	<div class="page-content" id="news">
 		<div class="news-section">
 			<h3>News</h3>
