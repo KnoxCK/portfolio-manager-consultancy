@@ -37,13 +37,10 @@
 		</div>
 	</div>
 
-
-
 	<div class="page-content" id="team">
 		<div class="team-section">
 			<h3>Our Team</h3>
 			<div class="team-members">
-
         <% @team_members.each do |member| %>
   				<div class="team-member">
   					<%= image_tag(member.image, crop: :fit) %>
@@ -53,22 +50,9 @@
   					<p><%= member.bio %></p>
   				</div>
         <% end %>
-
-
-				<!-- <div class="team-member team-member-last">
-					<%# image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1475845440/ME_hfrqwh.jpg", crop: :fit) %>
-					<h4>Tatyana Mursalimov</h4>
-					<h5><a href="tel:+44-790-927-9273">+44 (0) 7909 279273</a></h5>
-					<h5><%# link_to "tatyana@pmclconsulting.com", "mailto:tatyana@pmclconsulting.com" %></h5>
-					<p>Tatyana Mursalimov has professional background in global investment research, strategy planning  and consulting. For the past eight years, Tatyana has worked as an Executive Director at Goldman Sachs Global Investment Research division.</p>
-				</div>
- -->
-
 			</div>
 		</div>
 	</div>
-
-
 
 	<div class="page-content" id="news">
 		<div class="news-section">
