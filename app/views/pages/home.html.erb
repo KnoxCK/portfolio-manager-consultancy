@@ -58,7 +58,23 @@
 		<div class="news-section">
 			<h3>News</h3>
 			<div class="news-paras">
-				<div class="intro-para-first">
+        <% count = 1 %>
+        <% @news.each do |news| %>
+          <% if count == 4 %>
+          </div>
+          <br>
+          <div class="news-paras">
+          <% end %>
+          <div class="intro-para">
+            <h4><%= news.title %></h4>
+            <h5><%= news.date %></h5>
+            <hr>
+            <p><%= news.body.truncate(200) %>...</p>
+          </div>
+          <% count += 1 %>
+        <% end %>
+
+				<!-- <div class="intro-para-first">
 					<h4>Title</h4>
 					<h5>Date</h5>
 					<hr>
@@ -96,7 +112,7 @@
 					<h5>Date</h5>
 					<hr>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium et at rerum, officia perspiciatis enim vero praesentium. Numquam nihil alias repellendus officia laudantium, totam quia incidunt, eius, animi aliquam quidem.</p>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</div>
