@@ -1,23 +1,26 @@
 .whatwedo-section {
 	background-color: white;
 	padding: 130px 90px 0 90px;
-	
+
 }
 .whatwedo-paras {
 	font-size: 16px;
-    letter-spacing: 0.3px;
-    line-height: 1.8;
-    text-align: justify;
-    h5 {
-    	color: #E1482E;
-    	padding-top: 15px;
-    }
+  letter-spacing: 0.3px;
+  line-height: 1.8;
+  text-align: justify;
+  h5 {
+  	color: #E1482E;
+  	padding-top: 15px;
+  }
 }
 .whatwedo-para {
 	padding-top: 15px;
 	p {
 		padding-bottom: 60px;
 	}
+}
+#whatwedo-para-last {
+  padding-top: 50px;
 }
 .whatwedo-news {
 	padding-bottom: 80px;
