@@ -5,7 +5,7 @@ $(function(){
       $(this).removeClass('active');
       $('html,body').animate({
       scrollTop: $("#news-anchor").offset().top},
-      'slow');
+      1500);
     });
     $('#navbar-news').addClass('active');
   } else if ( window.location.hash === "#team") {
@@ -13,7 +13,7 @@ $(function(){
       $(this).removeClass('active');
       $('html,body').animate({
       scrollTop: $("#team-anchor").offset().top},
-      'slow');
+      1500);
     });
     $('#navbar-team').addClass('active');
   } else if ( window.location.hash === "#contact") {
@@ -21,7 +21,7 @@ $(function(){
       $(this).removeClass('active');
       $('html,body').animate({
       scrollTop: $("#contact-anchor").offset().top},
-      'slow');
+      1500);
     });
     $('#navbar-contact').addClass('active');
   } else {
@@ -41,7 +41,7 @@ $(function(){
     $(this).addClass('active');
     $('html,body').animate({
       scrollTop: $("#team-anchor").offset().top},
-      'slow');
+      1500);
   });
   $('#navbar-news').click(function(e){
     $('.navbar-pmcl-right a').each(function() {
@@ -50,7 +50,7 @@ $(function(){
     $(this).addClass('active');
     $('html,body').animate({
       scrollTop: $("#news-anchor").offset().top},
-      'slow');
+      1500);
   });
   $('#navbar-contact').click(function(e){
     $('.navbar-pmcl-right a').each(function() {
@@ -59,6 +59,6 @@ $(function(){
     $(this).addClass('active');
     $('html,body').animate({
       scrollTop: $("#contact-anchor").offset().top},
-      'slow');
+      1500);
   });
 });
