@@ -39,6 +39,10 @@
   padding: 0px 20px 0 20px;
   letter-spacing: 1px;
   line-height: 0.5px;
+  &.active {
+    color: #E1482E;
+    text-decoration: none;
+  }
 }
 .navbar-pmcl-link:hover {
   color: #E1482E;

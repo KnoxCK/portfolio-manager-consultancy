@@ -8,16 +8,16 @@
     <!-- What We Do link -->
       <%= link_to "What We Do", whatwedo_path, class: "navbar-pmcl-link" %>
       <!-- News  link -->
-      <%= link_to "News", root_path(:anchor => "news"), class: "navbar-pmcl-link" %>
+      <%= link_to "News", root_path(:anchor => "news"), class: "navbar-pmcl-link", id: "navbar-news" %>
       <!-- Team link -->
-      <%= link_to "Team", root_path(:anchor => "team"), class: "navbar-pmcl-link" %>
+      <%= link_to "Team", root_path(:anchor => "team"), class: "navbar-pmcl-link", id: "navbar-team" %>
       <!-- Contact link -->
-      <%= link_to "Contact", root_path(:anchor => "contact"), class: "navbar-pmcl-link" %>
+      <%= link_to "Contact", root_path(:anchor => "contact"), class: "navbar-pmcl-link", id: "navbar-contact" %>
     </div>
     <!-- Download brochure button -->
     <button class="download-link"><%= link_to "Download our brochure", downloadbrochure_path %></button>
   </div>
-</div>
+
 
 
 <!-- Dropdown list appearing on mobile only BEFORE SCROLL-->
