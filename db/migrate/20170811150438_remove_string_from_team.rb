@@ -3,4 +3,4 @@ class RemoveStringFromTeam < ActiveRecord::Migration[5.0]
     remove_column :teams, :string
   end
 end
-r
+
