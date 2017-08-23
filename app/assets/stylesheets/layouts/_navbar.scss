@@ -21,7 +21,15 @@
   z-index: 1001;
   width: 100%;
 }
-
+.sign-out {
+  i {
+    color: lightgrey;
+    font-size: 8px;
+    &:hover {
+      color: red;
+    }
+  }
+}
 /* Navbar logo */
 .navbar-pmcl-brand img {
   width: 150px;
