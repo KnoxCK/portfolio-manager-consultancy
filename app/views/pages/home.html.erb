@@ -74,7 +74,7 @@
           <%# end %>
           <div class="news-item">
             <h4><%# news.title %></h4>
-            <h5><%# news.date %></h5>
+            <h5><%# news.date.strftime("%d/%m/%Y") %></h5>
             <hr>
             <p><%# news.body.truncate(200) %></p>
           </div>
