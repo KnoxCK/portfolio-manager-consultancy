@@ -129,6 +129,31 @@
 		text-decoration: underline;
 	}
 }
+
+.single-news {
+  line-height: 1.7;
+  padding: 0 90px;
+  h4 {
+    font-size: 14px;
+    color: #E1482E;
+    letter-spacing: 0.5px;
+    margin: 0;
+  }
+  h5 {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  p {
+    font-size: 14px;
+    text-align: justify;
+    margin-bottom: 6px;
+  }
+  span {
+    font-size: 12px;
+    text-decoration: underline;
+  }
+}
+
 .news-item {
   padding: 10px 30px;
 }

@@ -57,23 +57,30 @@
 	<div class="page-content" id="news-anchor">
 		<div class="news-section">
 			<h3>News</h3>
-			<div class="news-paras">
-        <% count = 1 %>
-        <% @news.each do |news| %>
-          <% if count == 4 %>
+      <div class="single-news">
+        <h4><%= @news.first.title %></h4>
+        <h5><%= @news.first.date.strftime("%d/%m/%Y") %></h5>
+        <hr>
+        <p><%= @news.first.body %></p>
+      </div>
+
+			<!-- <div class="news-paras">
+        <%# count = 1 %>
+        <%# @news.each do |news| %>
+          <%# if count == 4 %>
           </div>
           <br>
           <div class="news-paras">
-          <% end %>
+          <%# end %>
           <div class="news-item">
-            <h4><%= news.title %></h4>
-            <h5><%= news.date %></h5>
+            <h4><%# news.title %></h4>
+            <h5><%# news.date %></h5>
             <hr>
-            <p><%= news.body.truncate(200) %>...</p>
+            <p><%# news.body.truncate(200) %></p>
           </div>
-          <% count += 1 %>
-        <% end %>
-			</div>
+          <%# count += 1 %>
+        <%# end %>
+			</div> -->
 		</div>
 	</div>
 
