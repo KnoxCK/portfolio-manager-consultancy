@@ -13,6 +13,8 @@
   margin-top: 70px;
 }
 .banner-content {  
+  padding-right: 60px;
+  padding-left: 60px;
 	h3 {
 		font-size: 20px;
     letter-spacing: 2px;
@@ -24,10 +26,14 @@
     height: 23px;
   }
 }
+@media only screen and (max-width: 928px) {
+    .banner-content img {
+      display: none;
+    }
+}
 @media only screen and (max-width: 452px) {
   .banner {
      margin: 34px 0 0 0;
-
      height: 25vh;
      h1 {
       display: none;

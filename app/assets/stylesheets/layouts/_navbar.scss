@@ -146,7 +146,10 @@
 .dropdown-menu-right {
   padding: 30px;
 }
-
+.fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+    color: #D54216;
+    padding-right: 20px;
+}
 
 // Mobile & Tablet only
 @media only screen and (max-width:1200px){
