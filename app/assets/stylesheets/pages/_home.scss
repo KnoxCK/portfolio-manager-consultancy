@@ -36,7 +36,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-content: center;
-	padding: 0px 90px;
+	padding: 0px 40px 0 90px;
 	line-height: 1.7;
 	h4 {
 		font-size: 14px;
@@ -55,6 +55,7 @@
 }
 .wwd-para {
   width: auto;
+  margin-right: 40px;
 }
 .team-section {
 	h3 {
@@ -189,6 +190,18 @@ hr {
 	}
 	.intro-para {
 		text-align: left;
+	}
+	.intro-paras {
+		padding-left: 60px;
+		p {
+			text-align: left;
+		}
+	}
+}
+@media only screen and (max-width: 920px) {
+	.intro-para {
+		flex-direction: column;
+		padding-bottom: 24px;
 	}
 }
 @media only screen and (max-width: 816px) {
