@@ -5,6 +5,10 @@
 .page-content {
 	background-color: white;
 	padding-bottom: 50px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
 }
 .intro-para {
 	font-size: 16px;
@@ -48,11 +52,9 @@
 		text-decoration: underline;
 	}
 }
-
 .wwd-para {
-  width: 300px;
+  width: auto;
 }
-
 .team-section {
 	h3 {
 		padding: 80px 0 30px 0;
