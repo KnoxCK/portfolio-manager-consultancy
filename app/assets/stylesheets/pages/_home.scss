@@ -11,6 +11,9 @@
 	justify-content: space-between;
 	margin: 20px 0;
 }
+.first-section {
+	margin: 0;
+}
 .intro-para {
 	font-size: 16px;
     padding: 60px 90px 30px 90px;
@@ -140,12 +143,11 @@
 		text-decoration: underline;
 	}
 }
-
 .single-news {
   line-height: 1.7;
   padding: 0 90px;
   h4 {
-    font-size: 14px;
+    font-size: 16px;
     color: #E1482E;
     letter-spacing: 0.5px;
     margin: 0;
@@ -164,7 +166,6 @@
     text-decoration: underline;
   }
 }
-
 .news-item {
   padding: 10px 30px;
 }
@@ -181,21 +182,25 @@ hr {
 		padding-right: 60px;
 		padding-left: 60px;
 		width: auto;
+		text-align: left;
 		h2 {
 			width: auto;
 		}
-	}
-	.contact-details {
-		margin: 10px 40px 40px 40px;
-	}
-	.intro-para {
-		text-align: left;
 	}
 	.intro-paras {
 		padding-left: 60px;
 		p {
 			text-align: left;
 		}
+	}
+	.contact-details {
+		margin: 10px 40px 40px 40px;
+	}
+	.news-section h3 {
+		padding-left: 60px;
+	}
+	.single-news {
+		padding-left: 60px;
 	}
 }
 @media only screen and (max-width: 920px) {
@@ -207,7 +212,16 @@ hr {
 	}
 }
 @media only screen and (max-width: 816px) {
-	.team-members {
+	
+	.page-content {
+		padding: 0;
+	}
+	.team-section h3 {
+    	padding: 80px 0 30px 60px;
+    	text-align: left;
+    	margin-top: 0;
+    }
+    .team-members {
 	    flex-direction: column;
 	    align-items: center;
 	}
@@ -221,14 +235,11 @@ hr {
     		text-align: left;
     	}
     }
-    .team-section h3 {
-    	padding: 80px 0 30px 60px;
-    	text-align: left;
-    }
     .news-section h3 {
     	padding-right: 60px;
     	padding-left: 60px;
     	width: auto;
+    	margin-top: 0;
     }
     .single-news {
     	padding-right: 60px;
@@ -240,16 +251,18 @@ hr {
     }
 }
 @media only screen and (max-width: 528px) {
-	.intro-para {
+	.page-content {
+    	padding-bottom: 0;
+    }
+    .intro-para {
 		padding: 45px 30px;
 	}
-	.team-member {
-		padding-right: 30px;
-    	padding-left: 30px;
-    	padding-bottom: 30px;
-    }
-    .team-section h3 {
+	.team-section h3 {
     	padding: 45px 30px;
+    }
+	.team-member {
+		padding: 0 30px 30px 30px;
+		width: auto;
     }
     .news-section h3 {
     	padding: 45px 30px;
@@ -258,9 +271,11 @@ hr {
     	padding-right: 30px;
     	padding-left: 30px;
     }
-    .page-content {
-    	padding-bottom: 0;
-    }
+}
+@media only screen and (max-width: 452px) {
+  	.wrapper {
+		padding: 20px;
+	}
 }
 
 @media only screen and (min-width: 1228px) and (max-width: 2492px) {
