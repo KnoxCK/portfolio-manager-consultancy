@@ -16,7 +16,7 @@
 }
 .intro-para {
 	font-size: 16px;
-    padding: 60px 90px 30px 90px;
+    padding: 60px 0px 30px 0px;
     letter-spacing: 0.3px;
     line-height: 1.8;
     text-align: justify;
@@ -286,21 +286,7 @@ hr {
 	}
 }
 
-@media only screen and (min-width: 1228px) and (max-width: 2492px) {
-	.intro-paras {
-		padding-bottom: 30px;
-		width: auto;
-		h2 {
-			width: auto;
-		}
-		p { 
-			text-align: left;
-		}
-	}
-	.wwd {
-		padding-right: 20px;
-	}
-}
+
 
 
 
