@@ -23,7 +23,9 @@
 		<div class="intro-paras">
       <% @what_we_do.each do |wwd| %>
         <div class="wwd-para">
+        <%= link_to whatwedo_path(:anchor => "whatwedo-para-#{wwd.title.first(4).downcase}") do %>
           <h4><%= wwd.title.upcase %></h4>
+        <% end %>
           <hr>
           <p><%= wwd.body.truncate(200) %></p>
           <p><span><%= link_to "Learn more", whatwedo_path(:anchor => "whatwedo-para-#{wwd.title.first(4).downcase}") %><i class="fa fa-chevron-circle-right"></i></span></p>
@@ -62,6 +64,11 @@
   					<h4><%= member.name %><i class="fa fa-linkedin-square"></i></h4>
   					<h5><a href="tel:<%= member.tel.gsub(" ", "-") %>"><%= member.tel %></a></h5>
   					<h5><%= link_to member.email, "mailto:#{member.email}" %></h5>
+                        <h5><%= link_to "#{member.linked_in_url}" , target: :_blank do %>
+                          <i class="fa fa-linkedin"></i>
+                          <% end %>
+                        </h5>
+
   					<p><%= member.bio %></p>
   				</div>
         <% end %>
