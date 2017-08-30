@@ -181,6 +181,14 @@
 hr {
 	margin: 0 0 7px 0;
 }
+@media only screen and (max-width: 1519px) {
+	.intro-para {
+		width: 800px;
+	}
+	.intro-paras {
+		width: 800px;
+	}
+}
 @media only screen and (max-width: 1000px) {
 	.page-content {
 		flex-direction: column;
