@@ -58,7 +58,7 @@
         <% @team_members.each do |member| %>
   				<div class="team-member">
   					<%= image_tag(member.image, crop: :fit) %>
-  					<h4><%= member.name %><i class="fa fa-linkedin"></i></h4>
+  					<h4><%= member.name %><i class="fa fa-linkedin-square"></i></h4>
   					<h5><a href="tel:<%= member.tel.gsub(" ", "-") %>"><%= member.tel %></a></h5>
   					<h5><%= link_to member.email, "mailto:#{member.email}" %></h5>
   					<p><%= member.bio %></p>
