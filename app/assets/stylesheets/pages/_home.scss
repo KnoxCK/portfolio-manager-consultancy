@@ -60,6 +60,10 @@
   width: auto;
   margin-right: 40px;
 }
+.fa-chevron-circle-right:before {
+	color: #E1482E;
+	padding-left: 5px;
+}
 .team-section {
 	h3 {
 		padding: 80px 0 30px 0;
@@ -73,10 +77,10 @@
 }
 .team-member {
 	margin: 20px 30px;
-	width: 250px;
+	width: 280px;
 	line-height: 1.7;
 	img {
-		width: 250px;
+		width: 280px;
 	}
 	h4 {
 		font-size: 18px;
@@ -103,6 +107,10 @@
 		margin-bottom: 6px;
 		margin-top: 14px;
 	}
+}
+.fa-linkedin-square:before {
+	color: #f7f7f7;
+	padding-left: 15px;
 }
 .news-section {
 	padding-bottom: 30px;
