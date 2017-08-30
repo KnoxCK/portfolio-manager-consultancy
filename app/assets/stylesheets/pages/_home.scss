@@ -218,11 +218,17 @@ hr {
 		width: auto;
 		padding-right: 50px;
 		padding-left: 50px;
+		p {
+			text-align: left;
+		}
 	}
 	.intro-paras {
 		width: auto;
 		padding-right: 50px;
 		padding-left: 50px;
+		p {
+			text-align: left;
+		}
 	}
 }
 @media only screen and (max-width: 816px) {
