@@ -189,24 +189,11 @@ hr {
 		width: 900px;
 	}
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1095px) {
 	.page-content {
 		flex-direction: column;
 	}
-	.intro-para {
-		padding: 0 60px 30px 60px;
-		width: auto;
-		text-align: left;
-		h2 {
-			width: auto;
-		}
-	}
-	.intro-paras {
-		padding-left: 60px;
-		p {
-			text-align: left;
-		}
-	}
+	
 	.contact-details {
 		margin: 10px 40px 40px 40px;
 	}
