@@ -22,14 +22,12 @@
   span {
     color: #E54A35;
   }
-  img {
-    height: 23px;
-  }
 }
-@media only screen and (max-width: 928px) {
-    .banner-content img {
-      display: none;
-    }
+.logo-big {
+  height: 23px;
+}
+.logo-small {
+  height: 64px;
 }
 @media only screen and (max-width: 452px) {
   .banner {
@@ -38,5 +36,9 @@
      h1 {
       display: none;
      }
+  }
+  .logo-small {
+    height: 40px;
+    margin-top: 22px;
   }
 }

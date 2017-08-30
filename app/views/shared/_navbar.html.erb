@@ -15,9 +15,10 @@
       <%= link_to "News", root_path(:anchor => "news"), class: "navbar-pmcl-link", id: "navbar-news" %>-->
       <!-- Contact link 
       <%= link_to "Contact", "mailto:contact@pmclconsulting.com", class: "navbar-pmcl-link", id: "navbar-contact" %>-->
-      <div class="nav-number">
-        <a href="tel:+44-208-133-5052">+44 (0)208 133 5052</a>
-      </div>
+      
+      &nbsp; &nbsp; <span><a href="tel:+44-208-133-5052">+44 (0)208 133 5052</a></span>/
+      <span><a href="mailto:info@pmclconsulting.com">info@pmclconsulting.com</a></span>
+   
     </div>
     <!-- Download brochure button -->
     <div class="nav-right">
@@ -35,9 +36,10 @@
 <!-- Dropdown list appearing on mobile only BEFORE SCROLL-->
 <div class="navbar-pmcl navbar-pmcl-fixed hidden-md hidden-lg">
   <!-- Logo -->
-  <%= link_to root_path, class: "navbar-pmcl-brand" do %>
-    <%= image_tag "PMCL_Logo.png" %>
-  <% end %>
+  <div class="contact-mobile">
+    <a href="tel:+44-208-133-5052">+44 (0)208 133 5052</a> /
+    <a href="mailto:info@pmclconsulting.com">info@pmclconsulting.com</a>
+  </div>
   <div class="navbar-pmcl-item hidden-md hidden-lg">
     <div class="dropdown toggle-white">
       <a class="fa fa-bars dropdown-toggle" data-toggle="dropdown" href="#"></a>
@@ -47,9 +49,6 @@
         <li><%= link_to "Team", root_path(:anchor => "team") %></li>
         <!--<li><%= link_to "News", root_path(:anchor => "news") %></li>
         <li><%= link_to "Contact", "mailto:contact@pmclconsulting.com" %></li>-->
-
-        <li><a href="tel:+44-208-133-5052">+44 (0)208 133 5052</a></li>
-
       </ul>
     </div>
   </div>

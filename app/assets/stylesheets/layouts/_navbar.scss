@@ -43,17 +43,21 @@
   a {
     text-decoration: none;
   }
-}
-.nav-number {
-    padding: 0px 20px 1px 20px;
+  span {
+    padding: 0px 10px 1px 10px;
     letter-spacing: 1px;
     line-height: 0.5px;
     text-decoration: none;
+    margin-bottom: 4px;
     a {
-      color: #E1482E;
       font-size: 12px;
     }
+    a:hover {
+      color: #E1482E;
+    }
+  }
 }
+
 .navbar-pmcl-link {
   color: #061B33;
   font-size: 14px;
@@ -163,7 +167,9 @@
     color: #D54216;
     padding-right: 20px;
 }
-
+.contact-mobile a {
+  font-size: 12px;
+}
 // Mobile & Tablet only
 @media only screen and (max-width:1200px){
   .navbar-pmcl-scroll {
