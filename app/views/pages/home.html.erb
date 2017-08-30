@@ -59,6 +59,11 @@
   					<h4><%= member.name %></h4>
   					<h5><a href="tel:<%= member.tel.gsub(" ", "-") %>"><%= member.tel %></a></h5>
   					<h5><%= link_to member.email, "mailto:#{member.email}" %></h5>
+                        <h5><%= link_to "https://#{member.linked_in_url}" , target: :_blank do %>
+                          <i class="fa fa-linkedin"></i>
+                          <% end %>
+                        </h5>
+
   					<p><%= member.bio %></p>
   				</div>
         <% end %>

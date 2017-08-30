@@ -1,4 +1,4 @@
-.wrapper {
+ .wrapper {
 	background-color: #f7f7f7;
 	padding: 0 50px;
 }
@@ -37,6 +37,10 @@
 		font-size: 14px;
 		color: #E1482E;
 		letter-spacing: 0.5px;
+    &:hover {
+      text-decoration: none;
+      color: #E1482E;
+    }
 	}
 	p {
 		font-size: 14px;
@@ -93,6 +97,13 @@
 		margin-bottom: 6px;
 		margin-top: 14px;
 	}
+  i {
+    font-size: 15px;
+    &:hover {
+      text-decoration: none;
+      color: #E1482E;
+    }
+  }
 }
 
 .news-section {
