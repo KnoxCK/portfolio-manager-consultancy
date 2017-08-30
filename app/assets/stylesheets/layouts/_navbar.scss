@@ -26,7 +26,7 @@
     color: lightgrey;
     font-size: 14px;
     &:hover {
-      color: red;
+      color: #E1482E;
     }
   }
 }
@@ -40,6 +40,19 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  a {
+    text-decoration: none;
+  }
+}
+.nav-number {
+    padding: 0px 20px 1px 20px;
+    letter-spacing: 1px;
+    line-height: 0.5px;
+    text-decoration: none;
+    a {
+      color: #E1482E;
+      font-size: 12px;
+    }
 }
 .navbar-pmcl-link {
   color: #061B33;

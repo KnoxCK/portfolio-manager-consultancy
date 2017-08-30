@@ -7,12 +7,16 @@
 	</div>
 	<div class="page-content first-section">
 		<div class="intro-para">
-			<p><strong>Portfolio Manager Consultancy Ltd. (PMCL)</strong> is a consultancy business established by Edward Jewson to advise charities on their investment management. PMCL's approach is based on two pillars - that of deep understanding of charity portfolio management and expertise in global investment research. <span><%= link_to "Read more...", "", id:"read-more" %></span> <span><%= link_to "Read less...", "", class:"hidden", id:"read-less" %></span></p>
-			<p class="read-more hidden">We strive to help charity trustees achieve best performance with their fund managers. We work with the trustees to make a thorough assessment of the investment policy and the incumbent fund management arrangements. We enhance charity investment policies to become beyond formal and fully reflect their particular investment targets. We do this through taking an out-of-the box approach to asset allocation and bench-mark setting by looking at a broader range of asset classes than traditionally used by many charities. We conduct professional and fully impartial manager and performance review.
+			<p><strong>Portfolio Manager Consultancy Ltd. (PMCL)</strong> is a consultancy business established by Edward Jewson to advise charities on their investment management arrangements. We strive to help charity trustees achieve best performance from their fund managers. <span><%= link_to "Read more...", "", id:"read-more" %></span> <span><%= link_to "Read less...", "", class:"hidden", id:"read-less" %></span></p>
+			<p class="read-more hidden">We use qualitative and quantitative research with a deep understanding of charity portfolio management and expertise in global investment research.
 			<br></br>
-			We aspire to challenge the existing status-quo to ensure that investment process is truly aligned with the particular needs of our clients. Our thorough and detailed review highlights the areas where fund managers have performed well, as well as the areas with potential for improvement. If the trustees conclude that they would like to change fund managers, we can carry out a beauty parade of suitable managers with the view to finding a replacement.
+			We make a thorough assessment of the investment policy and the incumbent fund management arrangements. We enhance investment policies to become beyond formal and truly reflect a charity’s particular financial objectives and constraints. 
 			<br></br>
-			PMCL is not affiliated with any fund manager and only receives its remuneration from its clients and therefore remains completely impartial.
+			We conduct a professional due-diligence review and provide ongoing monitoring of investment managers, including a performance review. Our thorough and detailed review highlights the areas where fund managers have performed well, as well as the areas with potential for improvement. If the trustees conclude that they would like to change fund managers, we can carry out a beauty parade of suitable managers with the view to finding an appropriate replacement.
+			<br></br>
+			We aspire to challenge the existing status-quo to ensure that the investment process is truly aligned with the particular needs of our clients.
+			<br></br>
+			PMCL offers completely impartial advice, as it is not affiliated to any fund management group and only receives its remuneration from its clients.
 			</p>
 		</div>
 		<div class="intro-paras">
@@ -21,7 +25,7 @@
           <h4><%= wwd.title.upcase %></h4>
           <hr>
           <p><%= wwd.body.truncate(200) %></p>
-          <p><span><%= link_to "Learn more", whatwedo_path(:anchor => "whatwedo-para-#{wwd.title.first(4).downcase}") %></span></p>
+          <p><span><%= link_to "Learn more", whatwedo_path(:anchor => "whatwedo-para-#{wwd.title.first(4).downcase}") %><i class="fa fa-chevron-circle-right"></i></span></p>
         </div>
       <% end %>
 
@@ -54,7 +58,7 @@
         <% @team_members.each do |member| %>
   				<div class="team-member">
   					<%= image_tag(member.image, crop: :fit) %>
-  					<h4><%= member.name %></h4>
+  					<h4><%= member.name %><i class="fa fa-linkedin"></i></h4>
   					<h5><a href="tel:<%= member.tel.gsub(" ", "-") %>"><%= member.tel %></a></h5>
   					<h5><%= link_to member.email, "mailto:#{member.email}" %></h5>
   					<p><%= member.bio %></p>
@@ -64,7 +68,7 @@
 		</div>
 	</div>
 
-	<div class="page-content" id="news-anchor">
+	<!--<div class="page-content" id="news-anchor">
 		<div class="news-section">
 			<h3>News</h3>
       <div class="single-news">
@@ -72,7 +76,9 @@
         <h5><%= @news.first.date.strftime("%d/%m/%Y") %></h5>
         <hr>
         <p><%= @news.first.body %></p>
-      </div>
+      </div>-->
+
+
 
 			<!-- <div class="news-paras">
         <%# count = 1 %>
