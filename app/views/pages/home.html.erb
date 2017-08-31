@@ -11,7 +11,7 @@
 			<p><strong>Portfolio Manager Consultancy Ltd. (PMCL)</strong> is a consultancy business established by Edward Jewson to advise charities on their investment management arrangements. We strive to help charity trustees achieve best performance from their fund managers. <span><%= link_to "Read more...", "", id:"read-more" %></span> <span><%= link_to "Read less...", "", class:"hidden", id:"read-less" %></span></p>
 			<p class="read-more hidden">We use qualitative and quantitative research with a deep understanding of charity portfolio management and expertise in global investment research.
 			<br></br>
-			We make a thorough assessment of the investment policy and the incumbent fund management arrangements. We enhance investment policies to become beyond formal and truly reflect a charity’s particular financial objectives and constraints. 
+			We make a thorough assessment of the investment policy and the incumbent fund management arrangements. We enhance investment policies to become beyond formal and truly reflect a charity’s particular financial objectives and constraints.
 			<br></br>
 			We conduct a professional due-diligence review and provide ongoing monitoring of investment managers, including a performance review. Our thorough and detailed review highlights the areas where fund managers have performed well, as well as the areas with potential for improvement. If the trustees conclude that they would like to change fund managers, we can carry out a beauty parade of suitable managers with the view to finding an appropriate replacement.
 			<br></br>
@@ -23,7 +23,9 @@
 		<div class="intro-paras">
       <% @what_we_do.each do |wwd| %>
         <div class="wwd-para">
+        <%= link_to whatwedo_path(:anchor => "whatwedo-para-#{wwd.title.first(4).downcase}") do %>
           <h4><%= wwd.title.upcase %></h4>
+        <% end %>
           <hr>
           <p><%= wwd.body.truncate(200) %></p>
           <p><span><%= link_to "Learn more", whatwedo_path(:anchor => "whatwedo-para-#{wwd.title.first(4).downcase}") %><i class="fa fa-chevron-circle-right"></i></span></p>
@@ -59,7 +61,11 @@
         <% @team_members.each do |member| %>
   				<div class="team-member">
   					<%= image_tag(member.image, crop: :fit) %>
-  					<h4><%= member.name %><i class="fa fa-linkedin-square"></i></h4>
+            <div class="name">
+    					<h4><%= member.name %></h4>
+              <%= link_to "#{member.linked_in_url}" , target: :_blank do %><i class="fa fa-linkedin-square"></i>
+              <% end %>
+            </div>
   					<h5><a href="tel:<%= member.tel.gsub(" ", "-") %>"><%= member.tel %></a></h5>
   					<h5><%= link_to member.email, "mailto:#{member.email}" %></h5>
   					<p><%= member.bio %></p>
