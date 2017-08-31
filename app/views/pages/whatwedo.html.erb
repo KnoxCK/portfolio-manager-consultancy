@@ -7,7 +7,7 @@
           <div id=<%= "whatwedo-para-#{wwd.title.first(4).downcase}" %>></div>
           <div class="whatwedo-para">
             <h5><%= wwd.title.upcase %><hr class="whatwedo-line"></h5>
-            <p><%= wwd.body.html_safe %></p>
+            <p><%= simple_format wwd.body.html_safe %></p>
           </div>
         <% end %>
 			</div>
