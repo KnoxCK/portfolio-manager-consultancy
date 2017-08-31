@@ -63,7 +63,7 @@
   					<%= image_tag(member.image, crop: :fit) %>
             <div class="name">
     					<h4><%= member.name %></h4>
-              <%= link_to "#{member.linked_in_url}" , target: :_blank do %><i class="fa fa-linkedin-square"></i>
+              <%= link_to "#{member.linked_in_url}" , target: :_blank do %><i class="fa fa-linkedin-square team-linkedin"></i>
               <% end %>
             </div>
   					<h5><a href="tel:<%= member.tel.gsub(" ", "-") %>"><%= member.tel %></a></h5>
