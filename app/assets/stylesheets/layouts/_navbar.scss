@@ -77,16 +77,15 @@
 .download-link {
   height: 30px;
   background-color: white;
-  font-size: 10px;
-  padding: 0px 10px 0 10px;
+  font-size: 12px;
+  padding: 8px;
   letter-spacing: 1px;
   line-height: 0.5px;
   border: 1px solid #E1482E;
-  a {
+  color: #E1482E;
+  &:hover {
+    text-decoration: none;
     color: #E1482E;
-    &:hover {
-      text-decoration: none;
-    }
   }
 }
 // On scroll only
@@ -191,7 +190,7 @@
   }
 }
 
- 
+
 
 
 
