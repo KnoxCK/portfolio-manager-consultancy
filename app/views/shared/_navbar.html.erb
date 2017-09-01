@@ -9,13 +9,13 @@
       <%= link_to "What We Do", whatwedo_path, class: "navbar-pmcl-link" %>
       <!-- Team link -->
       <%= link_to "Team", root_path(:anchor => "team"), class: "navbar-pmcl-link", id: "navbar-team" %>
-      
 
-      <!-- News  link 
+
+      <!-- News  link
       <%= link_to "News", root_path(:anchor => "news"), class: "navbar-pmcl-link", id: "navbar-news" %>-->
-      <!-- Contact link 
+      <!-- Contact link
       <%= link_to "Contact", "mailto:contact@pmclconsulting.com", class: "navbar-pmcl-link", id: "navbar-contact" %>-->
-      
+
       &nbsp; &nbsp; <span><a href="tel:+44-207-866-2534">+44 (0)207 866 2534</a> /</span>/
       <span><a href="mailto:info@pmclconsulting.com">info@pmclconsulting.com</a></span>
 
@@ -25,7 +25,7 @@
     </div>
     <!-- Download brochure button -->
     <div class="nav-right">
-      <button class="download-link"><%= link_to "Download our brochure", downloadbrochure_path %></button>
+      <%= link_to "Download our brochure", downloadbrochure_path, class: "download-link" %>
       <% if user_signed_in? %>
         <%= link_to destroy_user_session_path, method: :delete, class: "sign-out" do %>
           <i class="material-icons">power_settings_new</i>
