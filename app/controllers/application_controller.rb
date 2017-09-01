@@ -4,6 +4,6 @@ class ApplicationController < ActionController::Base
   skip_before_action :authenticate_user!, only: [:download_brochure]
 
   def download_brochure
-    send_file "app/assets/PortfolioManagerConsultancyBrochure.pdf", type: "application/pdf", x_sendfile: true
+    send_file "#{Rails.root}/app/assets/PortfolioManagerConsultancyBrochure.pdf", type: "application/pdf", x_sendfile: true
   end
 end
