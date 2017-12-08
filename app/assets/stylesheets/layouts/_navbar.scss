@@ -35,7 +35,10 @@
 .navbar-pmcl-brand img {
   width: 150px;
 }
-
+.navbar-linkedin-icon:hover {
+  text-decoration: none;
+  color: #E1482E;
+}
 /* Navbar right section (with form, links, button) */
 .navbar-pmcl-right {
   display: flex;
