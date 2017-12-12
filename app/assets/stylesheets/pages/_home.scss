@@ -81,7 +81,7 @@
 }
 .team-member {
 	margin: 20px 30px;
-	width: 280px;
+	width: 360px;
 	line-height: 1.7;
 	img {
 		width: 280px;
@@ -225,6 +225,12 @@ hr {
 	}
 	.single-news {
 		padding-left: 60px;
+	}
+}
+@media only screen and (max-width: 955px) {
+	.team-member {
+		margin: 20px 30px;
+		width: 300px;
 	}
 }
 @media only screen and (max-width: 920px) {
