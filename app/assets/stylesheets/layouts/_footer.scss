@@ -32,6 +32,18 @@
 		}
 	}
 }
+@media only screen and (max-width: 763px){
+	ul {
+	  padding: 10px;
+	  margin: 10px;
+	  display: block;
+	}
+	li {
+	  display:list-item;
+	  width: 80%; /* sometimes firefox gives issue*/
+	  word-break: break-all; /* break word in next line, if no space*/
+	}
+}
 @media only screen and (max-width: 410px){
 	.vertical_line {
 		display: none;

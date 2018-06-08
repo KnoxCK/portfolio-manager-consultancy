@@ -1,4 +1,4 @@
- .wrapper {
+.wrapper {
 	background-color: #f7f7f7;
 	padding: 0 50px;
 }
@@ -330,7 +330,11 @@ hr {
 		padding: 20px;
 	}
 }
-
+@media only screen and (max-width: 367px){
+	.wrapper {
+		background-color: white;
+	}
+}
 
 
 
