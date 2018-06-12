@@ -1,0 +1,73 @@
+<% if cookies && cookies['cookie_eu_consented'] != 'true' %>
+  <div class="cookies-eu js-cookies-eu">
+    <span class="cookies-eu-content-holder"><%= t('cookies_eu.cookies_text') %></span>
+    <span class="cookies-eu-button-holder">
+    <button class="cookies-eu-ok ok-button"> <%= t('cookies_eu.ok') %> </button>
+    <% if defined?(link).present? %>
+      <a href="<%= link %>" class="cookies-eu-link" target="<%= defined?(target).present? ? target : '' %>"> <%= t('cookies_eu.learn_more') %> </a>
+    <% end %>
+    </span>
+  </div>
+<% end %>
+
+<script src="/app/assets/javascripts/js.cookie.js"></script>
+<script>
+
+'use strict';
+
+var cookiesEu = {
+  init: function() {
+    var cookiesEuOKButton = document.querySelector('.ok-button');
+
+    if (cookiesEuOKButton) {
+      this.addListener(cookiesEuOKButton);
+    }
+  },
+
+  addListener: function(target) {
+    // Support for IE < 9
+    if (target.attachEvent) {
+      target.attachEvent('onclick', this.setCookie);
+    } else {
+      target.addEventListener('click', this.setCookie, false);
+    }
+  },
+
+  setCookie: function() {
+    Cookies.set('cookie_eu_consented', true, { path: '/', expires: 365 });
+
+    var container = document.querySelector('.js-cookies-eu');
+    container.parentNode.removeChild(container);
+  }
+};
+
+(function() {
+  var isCalled = false;
+
+  function isReady() {
+    if (isCalled) return;
+    isCalled = true;
+
+    cookiesEu.init();
+  }
+
+  if (document.addEventListener) {
+    document.addEventListener('DOMContentLoaded', isReady, false);
+  }
+
+  // Old browsers IE < 9
+  if (window.addEventListener) {
+    window.addEventListener('load', isReady, false);
+  } else if (window.attachEvent) {
+    window.attachEvent('onload', isReady);
+  }
+})();
+
+
+var cookieContent = document.querySelector('.cookies-eu-content-holder');
+if (cookieContent == null){}
+else{
+  cookieContent.innerHTML ='Our website uses cookies to provide you with full functionality and the best possible user experience. By continuing to use this website you agree to our cookies policy.';
+}
+
+</script>
