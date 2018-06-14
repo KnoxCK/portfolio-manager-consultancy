@@ -12,7 +12,7 @@
 
 <% content_for :after_js do %>
 
-<script src="/app/assets/javascripts/js.cookie.js"></script>
+
 <script>
 
 'use strict';
@@ -71,8 +71,8 @@ if (cookieContent == null){}
 else{
   cookieContent.innerHTML ='<p>Our website uses cookies to provide you with full functionality and the best possible user experience. By continuing to use this website you agree to our cookies policy.</p>';
   cookieContent.innerHTML += '<p><%= link_to "Find out more", privacy_policy_path %></p>'
+  var buttonSpan = document.querySelector('.translation_missing');
+  buttonSpan.innerHTML= 'Close';
 }
-var buttonSpan = document.querySelector('.translation_missing');
-buttonSpan.innerHTML= 'Close';
 </script>
 <% end %>
