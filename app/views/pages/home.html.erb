@@ -7,21 +7,25 @@
 		</div>
 	</div>
 	<div class="page-content first-section">
-		<div class="intro-para">
-			<p><strong>Portfolio Manager Consultancy Ltd. (PMCL)</strong> is a charity specialist investment consultant established by Edward Jewson. <span><%= link_to "Read more...", "", id:"read-more" %></span> <span><%= link_to "Read less...", "", class:"hidden", id:"read-less" %></span></p>
-			<p class="read-more hidden">
-			<br></br>
-			<strong>Impartial professional investment consulting tailored for charities and endowments</strong>
-			<br></br>
-			<strong>Charity specialist.</strong> We are focused on the charity sector with a deep understanding of charity portfolio management and expertise in global investment research. We offer flexible and tailored services for the individual needs of each charity, rather than packaged solutions.
-			<br></br>
-			<strong>Impartial advice.</strong> We are not affiliated to any fund management group and only receive our remuneration from our clients.
-			<br></br>
-			<strong>Professional service.</strong> Portfolio Manager Consultancy Ltd (PMCL) is a regulated business, which we view as a matter of good governance, compliance discipline and professionalism. The regulatory status enables us to broaden our investment consulting services benefiting our charity clients
-
+		<div class="intro-section">
+			<h3>Impartial professional investment consultancy established by Edward Jewson.</h3>
+			<h4><i class="fa fa-chevron-circle-right"></i>FOCUS ON CHARITIES, ENDOWMENTS, FOUNDATIONS AND NOT-FOR-PROFIT ORGANISATIONS</h4>
+			<hr>
+			<p>We combine a deep understanding of institutional investors' needs and expertise in global investment research. We offer flexible and tailored services for the individual needs of each of our clients, rather than packaged solutions.</p>
+			<h4><i class="fa fa-chevron-circle-right"></i>IMPARTIAL ADVICE</h4>
+			<hr>
+			<p>We are not affiliated to any fund management group and only receive our remuneration from our clients.</p>
+			<h4><i class="fa fa-chevron-circle-right"></i>PROFESSIONAL SERVICE</h4>
+			<hr>
+			<p>Portfolio Manager Consultancy Ltd (PMCL) is a regulated business, which we view as a matter of good governance, compliance discipline and professionalism. The regulatory status enables us to broaden our investment consulting services benefiting our charity clients.
 			</p>
 		</div>
-		<div class="intro-paras">
+	</div>
+	<div class="page-content">
+		<div class="wwd-section">
+			<h3>What We Do</h3>
+		</div>
+		<div class="what-we-do">
       		<% @what_we_do.each do |wwd| %>
         	<div class="wwd-para">
         		<%= link_to whatwedo_path(:anchor => "whatwedo-para-#{wwd.title.first(4).downcase}") do %>
@@ -32,48 +36,33 @@
           		<p><span><%= link_to "Learn more", whatwedo_path(:anchor => "whatwedo-para-#{wwd.title.first(4).downcase}") %><i class="fa fa-chevron-circle-right"></i></span></p>
         	</div>
       		<% end %>
-
-<!--
-      <div class="wwd-para">
-				<h4>INVESTMENT POLICY</h4>
-				<hr>
-				<p>We see investment policy as a cornerstone of effective investment management and successful relationships with fund managers. We review investment policy and ensure it is truly aligned with a charity’s investment goals</p>
-				<p><span><%# link_to "Learn more", whatwedo_path(:anchor => "whatwedo-para-first") %></span></p>
-			</div>
-			<div class="wwd-para">
-				<h4>FUND MANAGER REVIEW & MONITORING</h4>
-				<hr>
-				<p>We assist charities in monitoring of their investment management and conduct regular reviews of fund manager service and investment performance. We provide consolidated reporting where portfolios are</p>
-				<p><span><%# link_to "Learn more", whatwedo_path(:anchor => "whatwedo-para-second") %></span></p>
-			</div>
-			<div class="wwd-para">
-				<h4>CONDUCTING MANAGER SELECTION</h4>
-				<hr>
-				<p>We assist charity trustees on assessing their fund manager arrangements as a part of regular monitoring or bespoke projects. Where trustees come to a decision to intervene and change their fund managers, we will carry out a</p>
-				<p><span><%# link_to "Learn more", whatwedo_path(:anchor => "whatwedo-para-last") %></span></p>
-			</div> -->
 		</div>
 	</div>
+
 	<div class="page-content" id="team-anchor">
 		<div class="team-section">
 			<h3>Our Team</h3>
 			<div class="team-members">
-        <% @team_members.each do |member| %>
+        		<% @team_members.each do |member| %>
   				<div class="team-member">
   					<%= image_tag(member.image, crop: :fit) %>
-            <div class="name">
+            		<div class="name">
     					<h4><%= member.name %></h4>
-              <%= link_to "#{member.linked_in_url}" , target: :_blank do %><i class="fa fa-linkedin-square team-linkedin"></i>
-              <% end %>
-            </div>
-  					<h5><a href="tel:<%= member.tel.gsub(" ", "-") %>"><%= member.tel %></a></h5>
+              			<%= link_to "#{member.linked_in_url}" , target: :_blank do %><i class="fa fa-linkedin-square team-linkedin"></i>
+              			<% end %>
+            		</div>
+  					<!-- <h5><a href="tel:<%= member.tel.gsub(" ", "-") %>"><%= member.tel %></a></h5>-->
   					<h5><%= link_to member.email, "mailto:#{member.email}" %></h5>
   					<p><%= member.bio %></p>
   				</div>
-        <% end %>
+        		<% end %>
 			</div>
 		</div>
 	</div>
+
+
+
+	<!--NEWS -->
 
 	<!--<div class="page-content" id="news-anchor">
 		<div class="news-section">
