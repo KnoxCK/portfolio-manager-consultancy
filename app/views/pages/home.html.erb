@@ -28,7 +28,7 @@
 		<div class="what-we-do">
       		<% @what_we_do.each do |wwd| %>
         	<div class="wwd-para">
-        		<%= link_to whatwedo_path(:anchor => "whatwedo-para-#{wwd.title(4).downcase}") do %>
+        		<%= link_to whatwedo_path(:anchor => "whatwedo-para-#{wwd.title.first(4).downcase}") do %>
           			<h4><%= wwd.title.upcase %></h4>
         		<% end %>
           		<hr>
