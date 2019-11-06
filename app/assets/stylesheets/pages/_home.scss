@@ -230,10 +230,14 @@
 }
 @media only screen and (max-width: 528px) {
 	.page-content {
-    	padding-bottom: 0;
+    	padding: 0;
     }
     .intro-section {
 		padding: 45px 30px;
+	    h3 {
+	      margin-top: 0;
+	      padding-top: 0;
+	    }
 	}
 	.what-we-do {
 		padding-left: 30px;
