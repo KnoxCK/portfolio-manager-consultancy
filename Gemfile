@@ -18,7 +18,7 @@ gem 'simple_form'
 gem 'uglifier'
 
 gem 'cloudinary'
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave', '~> 2.1'
 
 gem 'remotipart', github: 'mshibuya/remotipart'
 gem 'rails_admin', '>= 1.0.0.rc'
